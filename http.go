@@ -7,8 +7,7 @@ import "net/http"
 
 func handler (w http.ResponseWriter, r *http.Request){
 	f.Fprintf(w,"hello %s !!" , r.URL.Path[1:])
-	//r.url.path is the path compoonent of the requested url  in this case is "/world"  of 
-	/world
+	//r.url.path is the path compoonent of the requested url  in this case is "/world"  of http://localhost:8080/world
 }
 
 func main() {
